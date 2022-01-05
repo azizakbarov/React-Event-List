@@ -19,9 +19,11 @@ function App() {
       });
     });
   };
+
+  const subtitle = "All events in Marioland";
   return (
     <div className="App">
-      <Title />
+      <Title title="Events in your area" subtitle={subtitle} />
       {showEvents && (
         <div>
           <button
