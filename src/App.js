@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import Title from "./components/Title";
-
+import Modal from "./components/Modal";
 function App() {
   const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
@@ -55,6 +55,10 @@ function App() {
             <button onClick={() => handleClick(event.id)}> delete event</button>
           </div>
         ))}
+      <Modal>
+        <h2>10% off Coupon Code</h2>
+        <p>use the code NINJA10 at the checkout</p>
+      </Modal>
     </div>
   );
 }
