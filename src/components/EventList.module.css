@@ -7,6 +7,12 @@
   border-radius: 4px;
 }
 
+/* this will be global */
+/* button {
+  background-color: #555;
+} */
+
+/* this will be scoped */
 .card button {
   background-color: #555;
 }
